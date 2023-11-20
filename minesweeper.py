@@ -231,7 +231,7 @@ class MinesweeperAI():
         and self.moves_made, but should not modify any of those values.
         """
         for cell in self.safes:
-            if cell not in self.moves_made and cell not in self.mines and cell in self.safes:
+            if cell not in self.moves_made and cell not in self.mines:
                 return cell
         return None
 
